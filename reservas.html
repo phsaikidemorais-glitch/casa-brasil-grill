@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Faça sua reserva na Casa Brasil Grill — restaurante brasileiro premium." />
+  <meta name="theme-color" content="#03100a" />
+  <title>Reservas | Casa Brasil Grill</title>
+  <link rel="icon" type="image/png" href="imagens/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="reservas">
+  <div class="site-grain" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-shell">
+      <a class="brand brand-image-link" href="index.html" aria-label="Casa Brasil Grill">
+        <img src="imagens/logo-branco.png" alt="Casa Brasil Grill" class="brand-logo" />
+      </a>
+
+      <nav class="main-nav" aria-label="Menu principal">
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-list" id="navList">
+          <li><a class="nav-link" href="index.html">Nossa essência</a></li>
+          <li><a class="nav-link" href="cardapio.html">O menu</a></li>
+          <li><a class="nav-link" href="sobre.html">Ambiente</a></li>
+          <li><a class="nav-link active" href="reservas.html">Reservas</a></li>
+          <li><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-gold header-cta" href="reservas.html">Fazer reserva</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero reservation-hero">
+      <div class="container reservation-layout">
+        <div class="page-hero-copy reveal">
+          <span class="section-eyebrow">Reservas</span>
+          <h1>Garanta uma mesa para uma <em>experiência</em> sem pressa.</h1>
+          <p>
+            O formulário foi desenhado para reduzir fricção: poucos campos, orientação clara
+            e confirmação visual imediata. Simples para o cliente, premium para a marca.
+          </p>
+
+          <div class="reservation-benefits">
+            <span>Confirmação rápida</span>
+            <span>Ambiente sofisticado</span>
+            <span>Atendimento personalizado</span>
+          </div>
+        </div>
+
+        <form class="reservation-form reveal delay-2" id="reservationForm">
+          <div class="form-head">
+            <span>Reserva online</span>
+            <h2>Escolha sua noite</h2>
+          </div>
+
+          <div class="form-grid">
+            <label>
+              Nome
+              <input type="text" name="nome" placeholder="Seu nome" required />
+            </label>
+
+            <label>
+              Telefone
+              <input type="tel" name="telefone" placeholder="(11) 99999-9999" required />
+            </label>
+
+            <label>
+              Data
+              <input type="date" name="data" required />
+            </label>
+
+            <label>
+              Horário
+              <select name="horario" required>
+                <option value="">Selecione</option>
+                <option>18:00</option>
+                <option>19:00</option>
+                <option>20:00</option>
+                <option>21:00</option>
+                <option>22:00</option>
+              </select>
+            </label>
+
+            <label>
+              Pessoas
+              <select name="pessoas" required>
+                <option value="">Selecione</option>
+                <option>2 pessoas</option>
+                <option>3 pessoas</option>
+                <option>4 pessoas</option>
+                <option>5 pessoas</option>
+                <option>6+ pessoas</option>
+              </select>
+            </label>
+
+            <label>
+              Ocasião
+              <select name="ocasiao">
+                <option>Jantar casual</option>
+                <option>Aniversário</option>
+                <option>Jantar em casal</option>
+                <option>Negócios</option>
+                <option>Família</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Observações
+            <textarea name="mensagem" placeholder="Preferência de mesa, restrições alimentares ou pedido especial..."></textarea>
+          </label>
+
+          <div class="reservation-actions">
+            <button class="btn btn-gold btn-large" type="submit">Confirmar interesse</button>
+            <a class="btn btn-whatsapp btn-large" id="reservationWhatsApp" href="#" target="_blank" rel="noopener">Enviar pelo WhatsApp</a>
+          </div>
+
+          <p class="form-note">Esta é uma reserva demonstrativa para projeto de portfólio. O botão de WhatsApp monta a mensagem automaticamente.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section-cream">
+      <div class="container">
+        <div class="section-title centered reveal">
+          <span class="section-eyebrow dark">Por que reservar</span>
+          <h2>Reservar muda o <em>ritmo</em> da experiência.</h2>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <span>01</span>
+            <h3>Mesa preparada</h3>
+            <p>A reserva orienta o serviço para receber o cliente com mais cuidado e precisão.</p>
+          </article>
+          <article class="service-card reveal delay-1">
+            <span>02</span>
+            <h3>Experiência mais fluida</h3>
+            <p>Menos espera, mais conforto e uma chegada com sensação de exclusividade.</p>
+          </article>
+          <article class="service-card reveal delay-2">
+            <span>03</span>
+            <h3>Atendimento atento</h3>
+            <p>Ocasiões especiais podem ser consideradas antes da chegada do cliente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand-image-link footer-brand" href="index.html" aria-label="Casa Brasil Grill">
+          <img src="imagens/logo-branco.png" alt="Casa Brasil Grill" class="brand-logo footer-logo" />
+        </a>
+        <p>Restaurante brasileiro premium com brasa, tradição, ambiente refinado e experiência memorável.</p>
+      </div>
+      <div>
+        <h3>Navegação</h3>
+        <a href="index.html">Nossa essência</a>
+        <a href="cardapio.html">O menu</a>
+        <a href="sobre.html">Ambiente</a>
+        <a href="reservas.html">Reservas</a>
+      </div>
+      <div>
+        <h3>Funcionamento</h3>
+        <p>Terça a Quinta · 18h às 23h</p>
+        <p>Sexta e Sábado · 18h à 00h</p>
+        <p>Domingo · 12h às 16h</p>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <p>Av. Brasil, 1450 · Centro</p>
+        <p>(11) 4002-2026</p>
+        <p>@casabrasilgrill</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Casa Brasil Grill. Projeto fictício para portfólio.</span>
+      <span>Design premium · HTML · CSS · JavaScript</span>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>

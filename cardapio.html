@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cardápio Casa Brasil Grill: cortes nobres, clássicos brasileiros, entradas, sobremesas e bebidas em um menu premium." />
+  <meta name="theme-color" content="#03100a" />
+  <title>O Menu | Casa Brasil Grill</title>
+  <link rel="icon" type="image/png" href="imagens/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="cardapio">
+  <div class="site-grain" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-shell">
+      <a class="brand brand-image-link" href="index.html" aria-label="Casa Brasil Grill">
+        <img src="imagens/logo-branco.png" alt="Casa Brasil Grill" class="brand-logo" />
+      </a>
+
+      <nav class="main-nav" aria-label="Menu principal">
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-list" id="navList">
+          <li><a class="nav-link" href="index.html">Nossa essência</a></li>
+          <li><a class="nav-link active" href="cardapio.html">O menu</a></li>
+          <li><a class="nav-link" href="sobre.html">Ambiente</a></li>
+          <li><a class="nav-link" href="reservas.html">Reservas</a></li>
+          <li><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-gold header-cta" href="reservas.html">Fazer reserva</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero menu-hero-page">
+      <div class="container page-hero-grid">
+        <div class="page-hero-copy reveal">
+          <span class="section-eyebrow">O menu</span>
+          <h1>Cortes <em>nobres</em>, clássicos brasileiros e escolhas fáceis.</h1>
+          <p>
+            Um cardápio desenhado para facilitar a decisão do cliente: categorias claras,
+            pratos com apelo visual, preço visível e pedido rápido.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-gold btn-large btn-arrow" href="#menuCompleto">Explorar pratos</a>
+            <button class="btn btn-ghost btn-large open-order-btn" type="button">Ver pedido</button>
+          </div>
+        </div>
+
+        <article class="featured-menu-card reveal delay-2">
+          <div class="featured-menu-image photo-picanha"></div>
+          <div>
+            <span>Escolha da casa</span>
+            <h2>Picanha na Brasa</h2>
+            <p>O prato que traduz a essência da Casa Brasil Grill: brasa, suculência e presença.</p>
+            <div>
+              <strong>R$ 89</strong>
+              <button class="btn btn-gold add-btn" data-name="Picanha na Brasa" data-price="89">Adicionar</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="menu-control-section" id="menuCompleto">
+      <div class="container">
+        <div class="menu-control-panel reveal">
+          <div>
+            <span class="section-eyebrow dark">Cardápio completo</span>
+            <h2>Escolha por <em>categoria</em> ou busque pelo prato.</h2>
+          </div>
+
+          <div class="menu-tools">
+            <label class="search-box">
+              <span>Buscar</span>
+              <input id="menuSearch" type="search" placeholder="Picanha, feijoada, sobremesa..." />
+            </label>
+
+            <div class="filter-row" aria-label="Filtros do cardápio">
+              <button class="filter-btn active" data-filter="todos" type="button">Todos</button>
+              <button class="filter-btn" data-filter="brasa" type="button">Brasa</button>
+              <button class="filter-btn" data-filter="classicos" type="button">Clássicos</button>
+              <button class="filter-btn" data-filter="entradas" type="button">Entradas</button>
+              <button class="filter-btn" data-filter="sobremesas" type="button">Sobremesas</button>
+              <button class="filter-btn" data-filter="bebidas" type="button">Bebidas</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-list">
+          <article class="menu-row reveal" data-category="brasa" data-title="picanha na brasa">
+            <div class="menu-row-image photo-picanha"><span>Mais pedido</span></div>
+            <div class="menu-row-content">
+              <div class="menu-row-top">
+                <span>Brasa premium</span>
+                <strong>R$ 89</strong>
+              </div>
+              <h3>Picanha na Brasa</h3>
+              <p>Corte nobre, sal de parrilla, farofa amanteigada, arroz branco e vinagrete fresco.</p>
+              <div class="menu-row-bottom">
+                <small>Serve 1 pessoa · ponto da casa</small>
+                <button class="btn btn-dark add-btn" data-name="Picanha na Brasa" data-price="89">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-row reveal" data-category="brasa" data-title="costela premium">
+            <div class="menu-row-image photo-costela"><span>Baixa temperatura</span></div>
+            <div class="menu-row-content">
+              <div class="menu-row-top">
+                <span>Brasa lenta</span>
+                <strong>R$ 96</strong>
+              </div>
+              <h3>Costela Premium</h3>
+              <p>Costela macia, molho da casa, purê rústico e legumes tostados.</p>
+              <div class="menu-row-bottom">
+                <small>Textura macia · sabor intenso</small>
+                <button class="btn btn-dark add-btn" data-name="Costela Premium" data-price="96">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-row reveal" data-category="classicos" data-title="feijoada premium">
+            <div class="menu-row-image photo-feijoada"><span>Clássico autoral</span></div>
+            <div class="menu-row-content">
+              <div class="menu-row-top">
+                <span>Brasil sofisticado</span>
+                <strong>R$ 76</strong>
+              </div>
+              <h3>Feijoada Premium</h3>
+              <p>Feijão encorpado, carnes selecionadas, couve fina, laranja, arroz e farofa dourada.</p>
+              <div class="menu-row-bottom">
+                <small>Servida com acompanhamentos</small>
+                <button class="btn btn-dark add-btn" data-name="Feijoada Premium" data-price="76">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-row reveal" data-category="classicos" data-title="moqueca da casa">
+            <div class="menu-row-image photo-moqueca"><span>Aromática</span></div>
+            <div class="menu-row-content">
+              <div class="menu-row-top">
+                <span>Tradição costeira</span>
+                <strong>R$ 84</strong>
+              </div>
+              <h3>Moqueca da Casa</h3>
+              <p>Peixe macio, leite de coco, pimentões, coentro fresco e arroz branco.</p>
+              <div class="menu-row-bottom">
+                <small>Leve, quente e marcante</small>
+                <button class="btn btn-dark add-btn" data-name="Moqueca da Casa" data-price="84">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-row reveal" data-category="entradas" data-title="coxinha artesanal">
+            <div class="menu-row-image photo-coxinha"><span>Crocante</span></div>
+            <div class="menu-row-content">
+              <div class="menu-row-top">
+                <span>Entrada</span>
+                <strong>R$ 32</strong>
+              </div>
+              <h3>Coxinha Artesanal</h3>
+              <p>Massa cremosa, frango bem temperado, casquinha crocante e molho especial.</p>
+              <div class="menu-row-bottom">
+                <small>6 unidades</small>
+                <button class="btn btn-dark add-btn" data-name="Coxinha Artesanal" data-price="32">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-row reveal" data-category="entradas" data-title="pasteis da casa">
+            <div class="menu-row-image photo-pastel"><span>Para dividir</span></div>
+            <div class="menu-row-content">
+              <div class="menu-row-top">
+                <span>Entrada brasileira</span>
+                <strong>R$ 36</strong>
+              </div>
+              <h3>Pastéis da Casa</h3>
+              <p>Massa fina, recheios selecionados e molho de pimenta suave.</p>
+              <div class="menu-row-bottom">
+                <small>8 unidades</small>
+                <button class="btn btn-dark add-btn" data-name="Pastéis da Casa" data-price="36">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-row reveal" data-category="sobremesas" data-title="acai especial">
+            <div class="menu-row-image photo-acai"><span>Tropical</span></div>
+            <div class="menu-row-content">
+              <div class="menu-row-top">
+                <span>Sobremesa</span>
+                <strong>R$ 38</strong>
+              </div>
+              <h3>Açaí Especial</h3>
+              <p>Açaí cremoso, frutas frescas, granola crocante e mel.</p>
+              <div class="menu-row-bottom">
+                <small>Final leve</small>
+                <button class="btn btn-dark add-btn" data-name="Açaí Especial" data-price="38">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-row reveal" data-category="sobremesas" data-title="pudim cremoso">
+            <div class="menu-row-image photo-pudim"><span>Clássico doce</span></div>
+            <div class="menu-row-content">
+              <div class="menu-row-top">
+                <span>Sobremesa</span>
+                <strong>R$ 29</strong>
+              </div>
+              <h3>Pudim Cremoso</h3>
+              <p>Pudim liso, calda âmbar brilhante e textura delicada.</p>
+              <div class="menu-row-bottom">
+                <small>Receita da casa</small>
+                <button class="btn btn-dark add-btn" data-name="Pudim Cremoso" data-price="29">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-row reveal" data-category="bebidas" data-title="caipirinha premium">
+            <div class="menu-row-image photo-caipirinha"><span>Assinatura</span></div>
+            <div class="menu-row-content">
+              <div class="menu-row-top">
+                <span>Bebida</span>
+                <strong>R$ 34</strong>
+              </div>
+              <h3>Caipirinha Premium</h3>
+              <p>Limão fresco, cachaça selecionada, gelo cristalino e equilíbrio perfeito.</p>
+              <div class="menu-row-bottom">
+                <small>Clássica brasileira</small>
+                <button class="btn btn-dark add-btn" data-name="Caipirinha Premium" data-price="34">Adicionar</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-row reveal" data-category="bebidas" data-title="suco tropical">
+            <div class="menu-row-image photo-suco"><span>Natural</span></div>
+            <div class="menu-row-content">
+              <div class="menu-row-top">
+                <span>Bebida</span>
+                <strong>R$ 22</strong>
+              </div>
+              <h3>Suco Tropical</h3>
+              <p>Frutas brasileiras, frescor intenso e apresentação leve.</p>
+              <div class="menu-row-bottom">
+                <small>Sem álcool</small>
+                <button class="btn btn-dark add-btn" data-name="Suco Tropical" data-price="22">Adicionar</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="no-results" id="noResults">
+          <strong>Nenhum prato encontrado.</strong>
+          <span>Tente buscar por outra categoria ou palavra.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="chef-suggestion">
+      <div class="container chef-panel reveal">
+        <div>
+          <span class="section-eyebrow">Sugestão do chef</span>
+          <h2>Entrada, brasa e sobremesa em uma <em>experiência</em> completa.</h2>
+          <p>Coxinha Artesanal + Picanha na Brasa + Pudim Cremoso. Uma primeira visita segura, elegante e memorável.</p>
+        </div>
+
+        <div class="chef-price">
+          <span>Menu sugerido</span>
+          <strong>R$ 150</strong>
+          <button class="btn btn-gold add-combo-btn" type="button">Adicionar combo</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand-image-link footer-brand" href="index.html" aria-label="Casa Brasil Grill">
+          <img src="imagens/logo-branco.png" alt="Casa Brasil Grill" class="brand-logo footer-logo" />
+        </a>
+        <p>Restaurante brasileiro premium com brasa, tradição, ambiente refinado e experiência memorável.</p>
+      </div>
+      <div>
+        <h3>Navegação</h3>
+        <a href="index.html">Nossa essência</a>
+        <a href="cardapio.html">O menu</a>
+        <a href="sobre.html">Ambiente</a>
+        <a href="reservas.html">Reservas</a>
+      </div>
+      <div>
+        <h3>Funcionamento</h3>
+        <p>Terça a Quinta · 18h às 23h</p>
+        <p>Sexta e Sábado · 18h à 00h</p>
+        <p>Domingo · 12h às 16h</p>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <p>Av. Brasil, 1450 · Centro</p>
+        <p>(11) 4002-2026</p>
+        <p>@casabrasilgrill</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Casa Brasil Grill. Projeto fictício para portfólio.</span>
+      <span>Design premium · HTML · CSS · JavaScript</span>
+    </div>
+  </footer>
+
+  <aside class="order-drawer" id="orderDrawer" aria-label="Resumo do pedido">
+    <div class="order-drawer-header">
+      <div>
+        <span>Pedido rápido</span>
+        <strong>Sua seleção</strong>
+      </div>
+      <button class="drawer-close" id="drawerClose" type="button" aria-label="Fechar pedido">×</button>
+    </div>
+    <div class="order-items" id="orderItems">
+      <p class="empty-order">Nenhum prato adicionado ainda.</p>
+    </div>
+    <div class="order-total">
+      <span>Total estimado</span>
+      <strong id="orderTotal">R$ 0</strong>
+    </div>
+    <a class="btn btn-whatsapp" id="sendWhatsAppOrder" href="#" target="_blank" rel="noopener">Enviar pedido via WhatsApp</a>
+    <a class="btn btn-gold" id="finishOrder" href="reservas.html">Finalizar reserva</a>
+  </aside>
+
+  <button class="floating-order" id="floatingOrder" type="button" aria-label="Abrir pedido">
+    <span>Pedido</span>
+    <strong id="floatingTotal">R$ 0</strong>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
